@@ -1,0 +1,22 @@
+701. Try to declare the variable with/without public static final keywords. Is there any difference between these two approaches? Why?
+
+    No difference.
+    When declaring the variable "x" in the interface, we don't need to use the keywords "public," "static," or "final.
+    " The variable is automatically considered public, static, and final within the interface. 
+    Using or omitting these keywords will have the same effect.
+
+02. Declare the abstract method with/without abstract keyword. Is there any difference between these two approaches? Why?
+    
+    No difference.
+    Similarly, when declaring an abstract method in an interface, we don't need to use the "abstract" keyword explicitly. 
+    All methods declared in an interface are implicitly abstract. 
+    Using or omitting the "abstract" keyword will not make any difference.
+
+03. Implement this into a class called “IntefaceImplemented” . Override all the abstract methods. 
+    Try to change the value of x inside this method and print the value of x. Is it possible for you to change x? why?
+
+    In the "InterfaceImplemented" class, we implement the "MyFirstInterface" interface. 
+    We override the abstract method "display()" as required. 
+    However, attempting to modify the value of "x" inside this method will result in a compilation error. 
+    The variable "x" is implicitly final within the interface, which means its value cannot be changed once assigned. 
+    Therefore, you cannot modify the value of "x" in the implementing class.
